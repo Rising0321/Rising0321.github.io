@@ -1,713 +1,522 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ruixing Zhang(张瑞星)</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ruixing Zhang (张瑞星) — Ph.D. student at BUAA researching world models, generative models, and spatiotemporal learning." />
+  <title>Ruixing Zhang · 张瑞星</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><name>I'm Ruixing Zhang <br /> 我是张瑞星,<br />a Ph.D. student at BUAA <br /> 北航的一名博士生.</name><br />
-					</a></h1>
-				</div>
-				<nav id="nav">
-					<ul>
-						<h3>
-						<a href="#one" class="active">About</a><br/>
-						<a href="#two" class="active">Publications</a><br/>
-						<a href="#opensource" class="active">Open Source</a><br/>
-						<a href="#three" class="active">Marathons</a><br/>
-						<a href="#four" class="active">Academic Service</a><br/>
-						<a href="#five" class="active">Selected Honors</a><br/>
-						<a href="#six" class="active">Contact</a><br/>
-						</h3>
-					</ul>
-				</nav>
-			</header>
+  <nav class="site-nav" aria-label="Primary">
+    <ul>
+      <li><a href="#one">About</a></li>
+      <li><a href="#two">Publications</a></li>
+      <li><a href="#opensource">Open Source</a></li>
+      <li><a href="#three">Marathons</a></li>
+      <li><a href="#four">Service</a></li>
+      <li><a href="#five">Honors</a></li>
+      <li><a href="#six">Contact</a></li>
+    </ul>
+  </nav>
 
-		<!-- Main -->
-			<div id="main">
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="avatar-wrap">
+        <img src="images/avatar.jpg" alt="Ruixing Zhang" width="140" height="140" />
+      </div>
+      <div class="hero-text">
+        <h1>
+          Ruixing Zhang
+          <span class="name-cn">张瑞星</span>
+        </h1>
+        <p class="role">
+          Ph.D. student · <span>BUAA</span> · World Models &amp; RL
+        </p>
+      </div>
+      <p class="hero-thesis">
+        Building models that let people <em>wander freely</em> in infinitely generated worlds —
+        from spatiotemporal mobility to interactive world simulators.
+      </p>
+    </div>
+  </header>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h1>About(关于)</h1>
-						</header>
-						<p><h3>I am a third year Ph.D. student at Beihang SCSE. I am very fortunate to be advised by Prof. Weifeng Lv. </h3></p>
-						<p><h3>我是来自北航计算机学院的一名博士生，我很荣幸能够被吕卫锋教授指导。 </h3></p>
-						<p><h3>My research interests lie in <b><font color="#881900">world model, generative model, and large Spatiotemporal models.</font></b> Since I was a child, I have enjoyed exploring and wandering endlessly in both games and the real world. Even when playing shooting games, I just like to find a car to drive around the map. I hope that through the efforts of academia and myself, more people can wander freely in infinitely generated worlds.</h3></p>
-						<p><h3>我的研究兴趣点在于 <b><font color="#881900">世界模型, 生成式模型 以及时空大模型.</font></b>  我从小就喜欢在游戏和现实世界里无限探索和徜徉，就算玩枪战类游戏，我也只是喜欢找个车在地图里逛逛。我希望通过学术界和我的努力，能让更多的人在无限生成的世界里徜徉。 </h3></p>
-						<p><h3>Unfortunately, my research career is not peace. I,  as the first author, after one paper being luckily accepted(IJCAI2022), have been rejected six times in a row (KDD2023, AAAI2024, KDD2024, IJCAI204, NeurIPS2024*2). After another one paper being accepted(KDD2025 Aug), another three were rejected(AAAI2025, ICML2025, KDD2025 Feb, AAAI2026, KDD2026 Aug). Then I was lucky to be accepted(ACL 2026 Findings) again. After that, another one paper was rejected(KDD2026 Feb). This may be related to my previous lack of focus on a research direction. I hope that both myself and you who see this homepage will be more determined and lucky.</h3></p>
-						<p><h3>不幸的是，我的研究生涯不是那么顺利。我幸运了中稿一次后(IJCAI2022)，作为第一作者的论文已经被连续拒稿6次了(KDD2023, AAAI2024, KDD2024, IJCAI204, NeurIPS2024*2)，又幸运了中稿一次后(KDD2025 Aug)，又有五篇被拒(AAAI2025, ICML2025, KDD2025 Feb, AAAI2026, KDD2026 Aug)。接着幸运的中稿了ACL 2026 Findings后，又有一篇被拒（KDD2026 Feb）。这可能与我此前没有专注于一个研究方向有关。 希望我和看到这个主页的你都会更坚定，更幸运。</h3></p>
+  <main>
 
-					</section> 
+    <!-- About -->
+    <section id="one" class="section">
+      <header class="section-header">
+        <h2>About<span class="section-cn">（关于）</span></h2>
+      </header>
 
+      <div class="prose-block">
+        <p class="lang-tag">EN</p>
+        <p>I am a third year Ph.D. student at Beihang SCSE. I am very fortunate to be advised by Prof. Weifeng Lv.</p>
+      </div>
+      <div class="prose-block">
+        <p class="lang-tag">中文</p>
+        <p>我是来自北航计算机学院的一名博士生，我很荣幸能够被吕卫锋教授指导。</p>
+      </div>
+      <div class="prose-block">
+        <p class="lang-tag">EN</p>
+        <p>My research interests lie in <span class="highlight">world model, generative model, and large Spatiotemporal models.</span> Since I was a child, I have enjoyed exploring and wandering endlessly in both games and the real world. Even when playing shooting games, I just like to find a car to drive around the map. I hope that through the efforts of academia and myself, more people can wander freely in infinitely generated worlds.</p>
+      </div>
+      <div class="prose-block">
+        <p class="lang-tag">中文</p>
+        <p>我的研究兴趣点在于 <span class="highlight">世界模型, 生成式模型 以及时空大模型.</span> 我从小就喜欢在游戏和现实世界里无限探索和徜徉，就算玩枪战类游戏，我也只是喜欢找个车在地图里逛逛。我希望通过学术界和我的努力，能让更多的人在无限生成的世界里徜徉。</p>
+      </div>
+      <div class="prose-block">
+        <p class="lang-tag">EN</p>
+        <p>Unfortunately, my research career is not peace. I, as the first author, after one paper being luckily accepted(IJCAI2022), have been rejected six times in a row (KDD2023, AAAI2024, KDD2024, IJCAI204, NeurIPS2024*2). After another one paper being accepted(KDD2025 Aug), another three were rejected(AAAI2025, ICML2025, KDD2025 Feb, AAAI2026, KDD2026 Aug). Then I was lucky to be accepted(ACL 2026 Findings) again. After that, another one paper was rejected(KDD2026 Feb). This may be related to my previous lack of focus on a research direction. I hope that both myself and you who see this homepage will be more determined and lucky.</p>
+      </div>
+      <div class="prose-block">
+        <p class="lang-tag">中文</p>
+        <p>不幸的是，我的研究生涯不是那么顺利。我幸运了中稿一次后(IJCAI2022)，作为第一作者的论文已经被连续拒稿6次了(KDD2023, AAAI2024, KDD2024, IJCAI204, NeurIPS2024*2)，又幸运了中稿一次后(KDD2025 Aug)，又有五篇被拒(AAAI2025, ICML2025, KDD2025 Feb, AAAI2026, KDD2026 Aug)。接着幸运的中稿了ACL 2026 Findings后，又有一篇被拒（KDD2026 Feb）。这可能与我此前没有专注于一个研究方向有关。希望我和看到这个主页的你都会更坚定，更幸运。</p>
+      </div>
+    </section>
 
-				<!-- Two -->
+    <!-- Publications -->
+    <section id="two" class="section">
+      <header class="section-header">
+        <h2>Publications<span class="section-cn">（一些微小的工作）</span></h2>
+      </header>
 
-					<section id="two">
-						<h1>Publications(一些微小的工作)</h1>
-						<div class="row">
-							<article class="col-3 col-12-xsmall work-item">
-								<a href="images/papers/sig2GPS.png" class="image fit thumb"><img src="images/papers/sig2GPS.png" alt="" /></a>
-							</article>
-							<article class="col-9 col-12-xsmall work-item">
-								<b><font color="#000000">Think over Trajectories: Leveraging Video Generation to Reconstruct GPS Trajectories from Cellular Signaling</font></b><br>
-								<u><b><font color="#000000">Ruixing Zhang</b></u>, Hanzhang Jiang, Leilei Sun, Liangzhe Han, Jibin Wang, Weifeng Lv<br>
-								<i><b><font color="#000000">Arxiv 2026</font></b></i><br />
-								<mylink><a href="https://arxiv.org/abs/2603.26610" >[Arxiv]</a></mylink>
-							</article>
-						</div>
-						<div class="row">
-							<article class="col-3 col-12-xsmall work-item">
-								<a href="images/papers/AGL1K.png" class="image fit thumb"><img src="images/papers/AGL1K.png" alt="" /></a>
-							</article>
-							<article class="col-9 col-12-xsmall work-item">
-								<b><font color="#000000">The Sonar Moment: Benchmarking Audio-Language Models in Audio Geo-Localization</font></b><br>
-								<u><b><font color="#000000">Ruixing Zhang</b></u>, Zihan Liu , Leilei Sun , Tongyu Zhu , Weifeng Lv<br>
-								<i><b><font color="#881900">ACL 2026 Findings</font></b></i><br />
-								<mylink><a href="https://arxiv.org/abs/2601.03227" >[Arxiv]</a></mylink>
-								<mylink><a href="https://github.com/Rising0321/AGL1K" >[Github]</a></mylink>
-								<mylink><a href="https://huggingface.co/spaces/RisingZhang/AudioGeoLoc" >[Space]</a></mylink>
-							</article>
-						</div>
-                        <div class="row">
-							<article class="col-3 col-12-xsmall work-item">
-								<a href="images/papers/VGLS.png" class="image fit thumb"><img src="images/papers/VGLS.png" alt="" /></a>
-							</article>
-							<article class="col-9 col-12-xsmall work-item">
-								<b><font color="#000000">Eyes Will Shut: A Vision-Based Next GPS Location Prediction Model by Reinforcement Learning from Visual Map Feed Back</font></b><br>
-								<u><b><font color="#000000">Ruixing Zhang</b></u>, Yang Zhang, Tongyu Zhu, Leilei Sun, Weifeng Lv<br>
-								<i><b><font color="#000000">Arxiv 2025</font></b></i><br />
-								<mylink><a href="https://arxiv.org/abs/2507.18661" >[Arxiv]</a></mylink>
-							</article>
-						</div>
-                        <div class="row">
-							<article class="col-3 col-12-xsmall work-item">
-								<a href="images/papers/UIC.png" class="image fit thumb"><img src="images/papers/UIC.png" alt="" /></a>
-							</article>
-							<article class="col-9 col-12-xsmall work-item">
-								<b><font color="#000000">Urban In-Context Learning: Bridging Pretraining and Inference through Masked Diffusion for Urban Profiling</font></b><br>
-								<u><b><font color="#000000">Ruixing Zhang</b></u>, Bo Wang, Tongyu Zhu, Leilei Sun, Weifeng Lv<br>
-								<i><b><font color="#000000">Arxiv 2025</font></b></i><br />
-								<mylink><a href="https://arxiv.org/abs/2508.03042" >[Arxiv]</a></mylink>
-							</article>
-						</div>
-						<div class="row">
-							<article class="col-3 col-12-xsmall work-item">
-								<a href="images/papers/KDD2025.png" class="image fit thumb"><img src="images/papers/KDD2025.png" alt="" /></a>
-							</article>
-							<article class="col-9 col-12-xsmall work-item">
-								<b><font color="#000000">Large-scale Human Mobility Data Regeneration for Open Urban Research</font></b><br>
-								<u><b><font color="#000000">Ruixing Zhang</b></u>, Yunqi Liu, Liangzhe Han, Leilei Sun, Charles Liu, Jibin Wang, Weifeng Lv<br>
-								<i><b><font color="#881900">KDD 2025</font></b></i><br />
-							</article>
-						</div>
-						<div class="row">
-							<article class="col-3 col-12-xsmall work-item">
-								<a href="images/papers/RAW.png" class="image fit thumb"><img src="images/papers/RAW.png" alt="" /></a>
-							</article>	
-							<article class="col-9 col-12-xsmall work-item">
-								<b><font color="#000000">Regions are Who Walk Them: a Large Pre-trained Spatiotemporal Model Based on Human Mobility for Ubiquitous Urban Sensing</font></b><br>
-								<u><b><font color="#000000">Ruixing Zhang</b></u>, Liangzhe Han, Leilei Sun, Yunqi Liu, Jibin Wang, Weifeng Lv<br>
-								<i><b><font color="#000000">Arxiv 2024</font></b></i><br />
-								<mylink><a href="https://arxiv.org/abs/2311.10471" >[Arxiv]</a></mylink>
-								<mylink><a href="https://github.com/Rising0321/RAW" >[GitHub]</a></mylink>
-							</article>
-						</div>
-						<div class="row">
-							<article class="col-3 col-12-xsmall work-item">
-								<a href="images/papers/GDCF.png" class="image fit thumb"><img src="images/papers/GDCF.png" alt="" /></a>
-							</article>
-							<article class="col-9 col-12-xsmall work-item">
-								<b><font color="#000000">Generic and dynamic graph representation learning for crowd flow modeling</font></b><br>
-								Liangzhe Han, <u><b><font color="#000000">Ruixing Zhang</b></u>, Leilei Sun, Bowen Du, Yanjie Fu, Tongyu Zhu<br>
-								<i><b><font color="#881900">AAAI 2023</font></b></i><br />
-								<mylink><a href="https://ojs.aaai.org/index.php/AAAI/article/download/25548/25320	" >[PDF]</a></mylink>
-								<mylink><a href="https://github.com/liangzhehan/GDCF" >[GitHub]</a></mylink>
-							</article>
-						</div>
+      <div class="paper-list">
 
-						<div class="row">
-							<article class="col-3 col-12-xsmall work-item">
-								<a href="images/papers/HMOD.png" class="image fit thumb"><img src="images/papers/HMOD.png" alt="" /></a>
-							</article>
-							<article class="col-9 col-12-xsmall work-item">
-								<b><font color="#000000">Dynamic graph learning based on hierarchical memory for origin-destination demand prediction</font></b><br>
-								<u><b><font color="#000000">Ruixing Zhang</b></u>, Liangzhe Han, Boyi Liu, Jiayuan Zeng, Leilei Sun<br>
-								<i><b><font color="#881900">IJCAI 2022</font></b></i><br />
-								<mylink><a href="https://arxiv.org/abs/2205.14593" >[Arxiv]</a></mylink>
-								<mylink><a href="https://github.com/Rising0321/HMOD" >[GitHub]</a></mylink>
-							</article>
+        <article class="paper-card">
+          <div class="paper-thumb">
+            <a href="#lb-sig2gps"><img src="images/papers/sig2GPS.png" alt="Think over Trajectories paper figure" /></a>
+          </div>
+          <div class="paper-body">
+            <h3>Think over Trajectories: Leveraging Video Generation to Reconstruct GPS Trajectories from Cellular Signaling</h3>
+            <p class="paper-authors"><span class="self">Ruixing Zhang</span>, Hanzhang Jiang, Leilei Sun, Liangzhe Han, Jibin Wang, Weifeng Lv</p>
+            <span class="venue venue--preprint">Arxiv 2026</span>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2603.26610">Arxiv</a>
+            </div>
+          </div>
+        </article>
 
-						</div>
+        <article class="paper-card">
+          <div class="paper-thumb">
+            <a href="#lb-agl1k"><img src="images/papers/AGL1K.png" alt="The Sonar Moment paper figure" /></a>
+          </div>
+          <div class="paper-body">
+            <h3>The Sonar Moment: Benchmarking Audio-Language Models in Audio Geo-Localization</h3>
+            <p class="paper-authors"><span class="self">Ruixing Zhang</span>, Zihan Liu, Leilei Sun, Tongyu Zhu, Weifeng Lv</p>
+            <span class="venue venue--top">ACL 2026 Findings</span>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2601.03227">Arxiv</a>
+              <a href="https://github.com/Rising0321/AGL1K">Github</a>
+              <a href="https://huggingface.co/spaces/RisingZhang/AudioGeoLoc">Space</a>
+            </div>
+          </div>
+        </article>
 
-						<div class="row">
-							<article class="col-3 col-12-xsmall work-item">
-								<a href="images/papers/DHNTSP.png" class="image fit thumb"><img src="images/papers/DHNTSP.png" alt="" /></a>
-							</article>
-							<article class="col-9 col-12-xsmall work-item">
-								<b><font color="#000000">Deep heterogeneous network for temporal set prediction</font></b><br>
-								Nannan Shi, Le Yu, Leilei Sun, Lihua Wang, Chunming Lin, <u><b><font color="#000000">Ruixing Zhang</b></u><br>
-								<i><b><font color="#881900">KBS 2021</font></b></i><br />
-								<mylink><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705121003026" >[Link]</a></mylink>
-							</article>
+        <article class="paper-card">
+          <div class="paper-thumb">
+            <a href="#lb-vgls"><img src="images/papers/VGLS.png" alt="Eyes Will Shut paper figure" /></a>
+          </div>
+          <div class="paper-body">
+            <h3>Eyes Will Shut: A Vision-Based Next GPS Location Prediction Model by Reinforcement Learning from Visual Map Feed Back</h3>
+            <p class="paper-authors"><span class="self">Ruixing Zhang</span>, Yang Zhang, Tongyu Zhu, Leilei Sun, Weifeng Lv</p>
+            <span class="venue venue--preprint">Arxiv 2025</span>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2507.18661">Arxiv</a>
+            </div>
+          </div>
+        </article>
 
-						</div>
+        <article class="paper-card">
+          <div class="paper-thumb">
+            <a href="#lb-uic"><img src="images/papers/UIC.png" alt="Urban In-Context Learning paper figure" /></a>
+          </div>
+          <div class="paper-body">
+            <h3>Urban In-Context Learning: Bridging Pretraining and Inference through Masked Diffusion for Urban Profiling</h3>
+            <p class="paper-authors"><span class="self">Ruixing Zhang</span>, Bo Wang, Tongyu Zhu, Leilei Sun, Weifeng Lv</p>
+            <span class="venue venue--preprint">Arxiv 2025</span>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2508.03042">Arxiv</a>
+            </div>
+          </div>
+        </article>
 
-					</section>
+        <article class="paper-card">
+          <div class="paper-thumb">
+            <a href="#lb-kdd2025"><img src="images/papers/KDD2025.png" alt="Large-scale Human Mobility paper figure" /></a>
+          </div>
+          <div class="paper-body">
+            <h3>Large-scale Human Mobility Data Regeneration for Open Urban Research</h3>
+            <p class="paper-authors"><span class="self">Ruixing Zhang</span>, Yunqi Liu, Liangzhe Han, Leilei Sun, Charles Liu, Jibin Wang, Weifeng Lv</p>
+            <span class="venue venue--top">KDD 2025</span>
+          </div>
+        </article>
 
-					<section id="opensource">
-						<h1>Open Source Projects(开源项目)</h1>
-						<div class="row">
-							<article class="col-3 col-12-xsmall work-item">
-								<a href="images/projects/WMFactory.png" class="image fit thumb"><img src="images/projects/WMFactory.png" alt="" /></a>
-							</article>
-							<article class="col-9 col-12-xsmall work-item">
-								<b><font color="#000000">WMFactory 0.5</font></b>
-								<mylink><a href="https://github.com/Rising0321/WMFactory">[GitHub <span class="repo-stars" data-repo="Rising0321/WMFactory">★</span>]</a></mylink><br>
-								One shared environment, one backend entrypoint, and eleven interactive world models under a unified session API.<br>
-								<i><b><font color="#000000">Python · PyTorch · Interactive World Models</font></b></i><br />
-							</article>
-						</div>
-						<div class="row">
-							<article class="col-3 col-12-xsmall work-item">
-								<a href="images/projects/nanovllmomni.png" class="image fit thumb"><img src="images/projects/nanovllmomni.png" alt="" /></a>
-							</article>
-							<article class="col-9 col-12-xsmall work-item">
-								<b><font color="#000000">Nano-vLLM-Omni</font></b>
-								<mylink><a href="https://github.com/Rising0321/nano-vllm-omni">[GitHub <span class="repo-stars" data-repo="Rising0321/nano-vllm-omni">★</span>]</a></mylink><br>
-								A lightweight vLLM-Omni-style diffusion serving stack built around Wan2.2-TI2V-5B-Diffusers, with explicit scheduler and step-wise denoising.<br>
-								<i><b><font color="#000000">Python · Diffusion Serving · Wan2.2</font></b></i><br />
-							</article>
-						</div>
-					</section>
+        <article class="paper-card">
+          <div class="paper-thumb">
+            <a href="#lb-raw"><img src="images/papers/RAW.png" alt="Regions are Who Walk Them paper figure" /></a>
+          </div>
+          <div class="paper-body">
+            <h3>Regions are Who Walk Them: a Large Pre-trained Spatiotemporal Model Based on Human Mobility for Ubiquitous Urban Sensing</h3>
+            <p class="paper-authors"><span class="self">Ruixing Zhang</span>, Liangzhe Han, Leilei Sun, Yunqi Liu, Jibin Wang, Weifeng Lv</p>
+            <span class="venue venue--preprint">Arxiv 2024</span>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2311.10471">Arxiv</a>
+              <a href="https://github.com/Rising0321/RAW">GitHub</a>
+            </div>
+          </div>
+        </article>
 
-					<section id="three">
-						<h1>Marathons(参加过的马拉松)</h1>
-						<h3>我很喜欢跑步，因为跑步会分泌多巴胺，会让我感觉到快乐。同时，我也参与了西安怪兽跑团，跑团教会我一个人跑步心情是一种颜色，一群人跑步心情汇聚成一道彩虹。在跑团中，不断的认识新的朋友，不断的帮助新人开始他们的第一次跑步，也是一件很快乐的事情。幸运的是，虽然我的学术生涯很不幸，而且我对跑步也懈怠了很久，但是从2025年的夏天开始，我重新开始坚持锻炼，我终于在2025年的西安重新开始跑马拉松并获得了PB，接着我跑了2026年的无锡马拉松，希望我们能常在跑道上相见。</h3>
-						<h3>I really enjoy running because it releases dopamine, which makes me feel happy. At the same time, I’m also part of the Xi’an Monster Crew Running, where I learned that running alone gives you one color of emotion, while running with a group brings together a whole rainbow of feelings. In the crew, I continuously meet new friends and help newcomers start their first run, which is also something that brings me great joy. Fortunately, although my academic journey has been full of setbacks and I neglected running for a long time, I started training again in the Summer of 2025. I finally returned to marathon running in Xi’an in 2025 and achieved a new personal best.Then I ran the Wuxi Marathon in 2026, and I hope we’ll often meet each other on the track.</h3>
+        <article class="paper-card">
+          <div class="paper-thumb">
+            <a href="#lb-gdcf"><img src="images/papers/GDCF.png" alt="Generic and dynamic graph representation learning paper figure" /></a>
+          </div>
+          <div class="paper-body">
+            <h3>Generic and dynamic graph representation learning for crowd flow modeling</h3>
+            <p class="paper-authors">Liangzhe Han, <span class="self">Ruixing Zhang</span>, Leilei Sun, Bowen Du, Yanjie Fu, Tongyu Zhu</p>
+            <span class="venue venue--top">AAAI 2023</span>
+            <div class="paper-links">
+              <a href="https://ojs.aaai.org/index.php/AAAI/article/download/25548/25320">PDF</a>
+              <a href="https://github.com/liangzhehan/GDCF">GitHub</a>
+            </div>
+          </div>
+        </article>
 
-						<div class="row">
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2026无锡.jpg" class="image fit thumb"><img src="images/runs/2026无锡.jpg" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2026 无锡马拉松<br /></h3>
-								<h3>42.195km<br /></h3>
-							</article>
+        <article class="paper-card">
+          <div class="paper-thumb">
+            <a href="#lb-hmod"><img src="images/papers/HMOD.png" alt="Dynamic graph learning paper figure" /></a>
+          </div>
+          <div class="paper-body">
+            <h3>Dynamic graph learning based on hierarchical memory for origin-destination demand prediction</h3>
+            <p class="paper-authors"><span class="self">Ruixing Zhang</span>, Liangzhe Han, Boyi Liu, Jiayuan Zeng, Leilei Sun</p>
+            <span class="venue venue--top">IJCAI 2022</span>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2205.14593">Arxiv</a>
+              <a href="https://github.com/Rising0321/HMOD">GitHub</a>
+            </div>
+          </div>
+        </article>
 
-                            <article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2025西安全.jpg" class="image fit thumb"><img src="images/runs/2025西安全.jpg" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2025 西安马拉松<br /></h3>
-								<h3>42.195km<br /></h3>
-							</article>
+        <article class="paper-card">
+          <div class="paper-thumb">
+            <a href="#lb-dhntsp"><img src="images/papers/DHNTSP.png" alt="Deep heterogeneous network paper figure" /></a>
+          </div>
+          <div class="paper-body">
+            <h3>Deep heterogeneous network for temporal set prediction</h3>
+            <p class="paper-authors">Nannan Shi, Le Yu, Leilei Sun, Lihua Wang, Chunming Lin, <span class="self">Ruixing Zhang</span></p>
+            <span class="venue venue--top">KBS 2021</span>
+            <div class="paper-links">
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705121003026">Link</a>
+            </div>
+          </div>
+        </article>
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2025北京半.jpg" class="image fit thumb"><img src="images/runs/2025北京半.jpg" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2025 北京半程马拉松<br /></h3>
-								<h3>21.0975km<br /></h3>
-							</article>
+      </div>
+    </section>
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2024曼谷.jpg" class="image fit thumb"><img src="images/runs/2024曼谷.jpg" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2024 神奇泰国曼谷马拉松<br /></h3>
-								<h3>21.0975km<br /></h3>
-							</article>
+    <!-- Open Source -->
+    <section id="opensource" class="section">
+      <header class="section-header">
+        <h2>Open Source Projects<span class="section-cn">（开源项目）</span></h2>
+      </header>
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2023北京.jpg" class="image fit thumb"><img src="images/runs/2023北京.jpg" alt="" /></a>
-							</article>	
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2023 北京半程马拉松<br /></h3>
-								<h3>21.0975km<br /></h3>
-							</article>
+      <div class="project-list">
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2019西安.jpg" class="image fit thumb"><img src="images/runs/2019西安.jpg" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2019 西安马拉松<br /></h3>
-								<h3>42.159km<br /></h3>
-							</article>
+        <article class="project-card">
+          <div class="project-thumb">
+            <a href="#lb-wmfactory"><img src="images/projects/WMFactory.png" alt="WMFactory screenshot" /></a>
+          </div>
+          <div class="project-body">
+            <h3>WMFactory 0.5</h3>
+            <div class="project-links">
+              <a href="https://github.com/Rising0321/WMFactory">GitHub <span class="repo-stars" data-repo="Rising0321/WMFactory">★</span></a>
+            </div>
+            <p class="project-desc">One shared environment, one backend entrypoint, and eleven interactive world models under a unified session API.</p>
+            <p class="project-tech">Python · PyTorch · Interactive World Models</p>
+          </div>
+        </article>
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2017杨凌.png" class="image fit thumb"><img src="images/runs/2017杨凌.png" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2017 杨凌马拉松<br /></h3>
-								<h3>21.0975km<br /></h3>
-							</article>
+        <article class="project-card">
+          <div class="project-thumb">
+            <a href="#lb-nanovllm"><img src="images/projects/nanovllmomni.png" alt="Nano-vLLM-Omni screenshot" /></a>
+          </div>
+          <div class="project-body">
+            <h3>Nano-vLLM-Omni</h3>
+            <div class="project-links">
+              <a href="https://github.com/Rising0321/nano-vllm-omni">GitHub <span class="repo-stars" data-repo="Rising0321/nano-vllm-omni">★</span></a>
+            </div>
+            <p class="project-desc">A lightweight vLLM-Omni-style diffusion serving stack built around Wan2.2-TI2V-5B-Diffusers, with explicit scheduler and step-wise denoising.</p>
+            <p class="project-tech">Python · Diffusion Serving · Wan2.2</p>
+          </div>
+        </article>
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2016李宁.png" class="image fit thumb"><img src="images/runs/2016李宁.png" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2016 李宁10k<br /></h3>
-								<h3>10k<br /></h3>
-							</article>
+      </div>
+    </section>
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2015城墙.jpg" class="image fit thumb"><img src="images/runs/2015城墙.jpg" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2015 城墙马拉松<br /></h3>
-								<h3>13.7km(一圈城墙的距离)<br /></h3>
-							</article>
+    <!-- Marathons -->
+    <section id="three" class="section">
+      <header class="section-header">
+        <h2>Marathons<span class="section-cn">（参加过的马拉松）</span></h2>
+      </header>
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2015杨凌.png" class="image fit thumb"><img src="images/runs/2015杨凌.png" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2015 杨凌马拉松<br /></h3>
-								<h3>42.195km<br /></h3>
-								<b><font color="#881900">人生首马</font></b>
-							</article>
+      <div class="run-intro">
+        <div class="prose-block">
+          <p class="lang-tag">中文</p>
+          <p>我很喜欢跑步，因为跑步会分泌多巴胺，会让我感觉到快乐。同时，我也参与了西安怪兽跑团，跑团教会我一个人跑步心情是一种颜色，一群人跑步心情汇聚成一道彩虹。在跑团中，不断的认识新的朋友，不断的帮助新人开始他们的第一次跑步，也是一件很快乐的事情。幸运的是，虽然我的学术生涯很不幸，而且我对跑步也懈怠了很久，但是从2025年的夏天开始，我重新开始坚持锻炼，我终于在2025年的西安重新开始跑马拉松并获得了PB，接着我跑了2026年的无锡马拉松，希望我们能常在跑道上相见。</p>
+        </div>
+        <div class="prose-block">
+          <p class="lang-tag">EN</p>
+          <p>I really enjoy running because it releases dopamine, which makes me feel happy. At the same time, I'm also part of the Xi'an Monster Crew Running, where I learned that running alone gives you one color of emotion, while running with a group brings together a whole rainbow of feelings. In the crew, I continuously meet new friends and help newcomers start their first run, which is also something that brings me great joy. Fortunately, although my academic journey has been full of setbacks and I neglected running for a long time, I started training again in the Summer of 2025. I finally returned to marathon running in Xi'an in 2025 and achieved a new personal best. Then I ran the Wuxi Marathon in 2026, and I hope we'll often meet each other on the track.</p>
+        </div>
+      </div>
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2015欢乐跑.jpg" class="image fit thumb"><img src="images/runs/2015欢乐跑.jpg" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2015 欢乐跑中国<br /></h3>
-								<h3>10km<br /></h3>
-								<h3><b><font color="#881900">兔子</font></b><br /></h3>
-							</article>
+      <div class="timeline">
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2015李宁.jpg" class="image fit thumb"><img src="images/runs/2015李宁.jpg" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2015 李宁10k<br /></h3>
-								<h3>10k<br /></h3>
-							</article>
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2026wx"><img src="images/runs/2026无锡.jpg" alt="2026 无锡马拉松" /></a></div>
+          <div class="run-body">
+            <h3>2026 无锡马拉松</h3>
+            <p class="run-distance">42.195 km</p>
+          </div>
+        </div>
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2014城墙.jpg" class="image fit thumb"><img src="images/runs/2014城墙.jpg" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2014 城墙马拉松<br /></h3>
-								<h3>21.0975km<br /></h3>
-							</article>
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2025xa"><img src="images/runs/2025西安全.jpg" alt="2025 西安马拉松" /></a></div>
+          <div class="run-body">
+            <h3>2025 西安马拉松</h3>
+            <p class="run-distance">42.195 km</p>
+          </div>
+        </div>
 
-							<article class="col-2 col-12-xsmall work-item">
-								<a href="images/runs/2014李宁.jpg" class="image fit thumb"><img src="images/runs/2014李宁.jpg" alt="" /></a>
-							</article>
-							<article class="col-10 col-12-xsmall work-item">
-								<h3>2014 李宁10k<br /></h3>
-								<h3>10k<br /></h3>
-							</article>
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2025bjh"><img src="images/runs/2025北京半.jpg" alt="2025 北京半程马拉松" /></a></div>
+          <div class="run-body">
+            <h3>2025 北京半程马拉松</h3>
+            <p class="run-distance">21.0975 km</p>
+          </div>
+        </div>
 
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2024bkk"><img src="images/runs/2024曼谷.jpg" alt="2024 神奇泰国曼谷马拉松" /></a></div>
+          <div class="run-body">
+            <h3>2024 神奇泰国曼谷马拉松</h3>
+            <p class="run-distance">21.0975 km</p>
+          </div>
+        </div>
 
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2023bj"><img src="images/runs/2023北京.jpg" alt="2023 北京半程马拉松" /></a></div>
+          <div class="run-body">
+            <h3>2023 北京半程马拉松</h3>
+            <p class="run-distance">21.0975 km</p>
+          </div>
+        </div>
 
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2019xa"><img src="images/runs/2019西安.jpg" alt="2019 西安马拉松" /></a></div>
+          <div class="run-body">
+            <h3>2019 西安马拉松</h3>
+            <p class="run-distance">42.159 km</p>
+          </div>
+        </div>
 
-						</div>
-					</section>
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2017yl"><img src="images/runs/2017杨凌.png" alt="2017 杨凌马拉松" /></a></div>
+          <div class="run-body">
+            <h3>2017 杨凌马拉松</h3>
+            <p class="run-distance">21.0975 km</p>
+          </div>
+        </div>
 
-					<section id="four">
-						<h1>Academic Service（学术服务）</h1>
-						<p><h3>I have served as an official reviewer / program committee member for: NeurIPS 2024, KDD 2025, ICLR 2025, ICML 2025, KDD 2025 (Feb Cycle) Research Track, NeurIPS 2025, AAAI 2025, KDD 2026 (Aug Cycle) Research Track, ICLR 2026, KDD 2026 (Feb Cycle) Research Track, KDD 2026 (Feb Cycle) ADS Track.</h3></p>
-						<p><h3>我担任以下会议的官方审稿人/程序委员：NeurIPS 2024, KDD 2025, ICLR 2025, ICML 2025, KDD 2025 (Feb Cycle) Research Track, NeurIPS 2025, AAAI 2025, KDD 2026 (Aug Cycle) Research Track, ICLR 2026, KDD 2026 (Feb Cycle) Research Track, KDD 2026 (Feb Cycle) ADS Track.</h3></p>
-					</section>
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2016ln"><img src="images/runs/2016李宁.png" alt="2016 李宁10k" /></a></div>
+          <div class="run-body">
+            <h3>2016 李宁10k</h3>
+            <p class="run-distance">10 km</p>
+          </div>
+        </div>
 
-					<section id="five">
-						<h1>Selected Honors（部分所获奖项）</h1>
-						<h3>2025 KDD 2025 杰出审稿人 (前 10%)（KDD 2025 Outstanding Reviewer (Top 10%)）</h3>
-						<h3>2023 北航青年五四奖章，全校10人（Beihang Youth May Fourth Medal; Top 10 University-wide）</h3>
-						<h3>2023 北京市优秀毕业生（Beijing Outstanding Graduate）</h3>
-						<h3>2023 挑战杯国赛二等奖（Second Prize at the National Challenge Cup）</h3>
-						<h3>2023 北京市挑战杯主赛道特等奖（Special Prize (Main Track) in Beijing Challenge Cup）</h3>
-						<h3>2022 北京航空航天大学冯如杯主赛道一等奖（First Prize (Main Track) in BUAA Fengru Cup）</h3>
-						<h3>2021 国际大学生程序设计竞赛（ICPC）亚洲区总决赛银牌（Silver Medal at ICPC East China Finals）</h3>
-						<h3>2020 国际大学生程序设计竞赛（ICPC）南京区域赛金牌（Gold Medal at ICPC Nanjing Regional）</h3>
-						<h3>2018 全国青少年信息学竞赛国赛（NOI）铜牌（Bronze Medal at NOI）</h3>
-						<h3>2017 全国青少年信息学竞赛（NOIP）省级一等奖，陕西省第五名（First Prize at NOIP; 5th in Shaanxi）</h3>
-					</section>
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2015cq"><img src="images/runs/2015城墙.jpg" alt="2015 城墙马拉松" /></a></div>
+          <div class="run-body">
+            <h3>2015 城墙马拉松</h3>
+            <p class="run-distance">13.7 km（一圈城墙的距离）</p>
+          </div>
+        </div>
 
-					<section id="six">
-						<h1>Contact（联系方式）</h1>
-						<h3>G1149, New Main Building (新主楼)<br />  
-						37 Xueyuan Road(学院路37号), Haidian District(海淀区) <br />
-						Beijing(北京), China(中国) <br />
-						19373115[at]buaa.edu.cn
-							<br />
-						<mylink><a href="https://scholar.google.com/citations?user=JT8_reMAAAAJ&hl=en" >[Google Scholar]</a></mylink>
-						<mylink><a href="https://blog.csdn.net/Rising_shit/article/list">[CSDN]</a></mylink>
-						<mylink><a href="https://space.bilibili.com/58844648" >[BiliBili]</a></mylink>
-					</section>
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2015yl"><img src="images/runs/2015杨凌.png" alt="2015 杨凌马拉松" /></a></div>
+          <div class="run-body">
+            <h3>2015 杨凌马拉松</h3>
+            <p class="run-distance">42.195 km</p>
+            <span class="run-badge">人生首马</span>
+          </div>
+        </div>
 
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2015hl"><img src="images/runs/2015欢乐跑.jpg" alt="2015 欢乐跑中国" /></a></div>
+          <div class="run-body">
+            <h3>2015 欢乐跑中国</h3>
+            <p class="run-distance">10 km</p>
+            <span class="run-badge">兔子</span>
+          </div>
+        </div>
 
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2015ln"><img src="images/runs/2015李宁.jpg" alt="2015 李宁10k" /></a></div>
+          <div class="run-body">
+            <h3>2015 李宁10k</h3>
+            <p class="run-distance">10 km</p>
+          </div>
+        </div>
 
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2014cq"><img src="images/runs/2014城墙.jpg" alt="2014 城墙马拉松" /></a></div>
+          <div class="run-body">
+            <h3>2014 城墙马拉松</h3>
+            <p class="run-distance">21.0975 km</p>
+          </div>
+        </div>
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+        <div class="run-item">
+          <div class="run-thumb"><a href="#lb-run-2014ln"><img src="images/runs/2014李宁.jpg" alt="2014 李宁10k" /></a></div>
+          <div class="run-body">
+            <h3>2014 李宁10k</h3>
+            <p class="run-distance">10 km</p>
+          </div>
+        </div>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
+      </div>
+    </section>
 
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+    <!-- Academic Service -->
+    <section id="four" class="section">
+      <header class="section-header">
+        <h2>Academic Service<span class="section-cn">（学术服务）</span></h2>
+      </header>
 
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
+      <div class="prose-block">
+        <p class="lang-tag">EN</p>
+        <p>I have served as an official reviewer / program committee member for: NeurIPS 2024, KDD 2025, ICLR 2025, ICML 2025, KDD 2025 (Feb Cycle) Research Track, NeurIPS 2025, AAAI 2025, KDD 2026 (Aug Cycle) Research Track, ICLR 2026, KDD 2026 (Feb Cycle) Research Track, KDD 2026 (Feb Cycle) ADS Track.</p>
+      </div>
+      <div class="prose-block">
+        <p class="lang-tag">中文</p>
+        <p>我担任以下会议的官方审稿人/程序委员：NeurIPS 2024, KDD 2025, ICLR 2025, ICML 2025, KDD 2025 (Feb Cycle) Research Track, NeurIPS 2025, AAAI 2025, KDD 2026 (Aug Cycle) Research Track, ICLR 2026, KDD 2026 (Feb Cycle) Research Track, KDD 2026 (Feb Cycle) ADS Track.</p>
+      </div>
+    </section>
 
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
+    <!-- Honors -->
+    <section id="five" class="section">
+      <header class="section-header">
+        <h2>Selected Honors<span class="section-cn">（部分所获奖项）</span></h2>
+      </header>
 
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
+      <ul class="simple-list">
+        <li><span class="year">2025</span> KDD 2025 杰出审稿人 (前 10%)（KDD 2025 Outstanding Reviewer (Top 10%)）</li>
+        <li><span class="year">2023</span> 北航青年五四奖章，全校10人（Beihang Youth May Fourth Medal; Top 10 University-wide）</li>
+        <li><span class="year">2023</span> 北京市优秀毕业生（Beijing Outstanding Graduate）</li>
+        <li><span class="year">2023</span> 挑战杯国赛二等奖（Second Prize at the National Challenge Cup）</li>
+        <li><span class="year">2023</span> 北京市挑战杯主赛道特等奖（Special Prize (Main Track) in Beijing Challenge Cup）</li>
+        <li><span class="year">2022</span> 北京航空航天大学冯如杯主赛道一等奖（First Prize (Main Track) in BUAA Fengru Cup）</li>
+        <li><span class="year">2021</span> 国际大学生程序设计竞赛（ICPC）亚洲区总决赛银牌（Silver Medal at ICPC East China Finals）</li>
+        <li><span class="year">2020</span> 国际大学生程序设计竞赛（ICPC）南京区域赛金牌（Gold Medal at ICPC Nanjing Regional）</li>
+        <li><span class="year">2018</span> 全国青少年信息学竞赛国赛（NOI）铜牌（Bronze Medal at NOI）</li>
+        <li><span class="year">2017</span> 全国青少年信息学竞赛（NOIP）省级一等奖，陕西省第五名（First Prize at NOIP; 5th in Shaanxi）</li>
+      </ul>
+    </section>
 
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
+    <!-- Contact -->
+    <section id="six" class="section">
+      <header class="section-header">
+        <h2>Contact<span class="section-cn">（联系方式）</span></h2>
+      </header>
 
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
+      <div class="contact-card">
+        <address>
+          G1149, New Main Building (新主楼)<br />
+          37 Xueyuan Road (学院路37号), Haidian District (海淀区)<br />
+          Beijing (北京), China (中国)<br />
+          19373115[at]buaa.edu.cn
+        </address>
+        <div class="contact-links">
+          <a href="https://scholar.google.com/citations?user=JT8_reMAAAAJ&amp;hl=en">Google Scholar</a>
+          <a href="https://blog.csdn.net/Rising_shit/article/list">CSDN</a>
+          <a href="https://space.bilibili.com/58844648">BiliBili</a>
+        </div>
+      </div>
+    </section>
 
-					</section>
-				-->
+  </main>
 
-			</div>
+  <footer class="site-footer">
+  </footer>
 
-		<!-- Footer -->
-<!-- 			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer> -->
+  <!-- CSS-only lightboxes -->
+  <div id="lb-sig2gps" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/papers/sig2GPS.png" alt="" /></div>
+  <div id="lb-agl1k" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/papers/AGL1K.png" alt="" /></div>
+  <div id="lb-vgls" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/papers/VGLS.png" alt="" /></div>
+  <div id="lb-uic" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/papers/UIC.png" alt="" /></div>
+  <div id="lb-kdd2025" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/papers/KDD2025.png" alt="" /></div>
+  <div id="lb-raw" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/papers/RAW.png" alt="" /></div>
+  <div id="lb-gdcf" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/papers/GDCF.png" alt="" /></div>
+  <div id="lb-hmod" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/papers/HMOD.png" alt="" /></div>
+  <div id="lb-dhntsp" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/papers/DHNTSP.png" alt="" /></div>
+  <div id="lb-wmfactory" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/projects/WMFactory.png" alt="" /></div>
+  <div id="lb-nanovllm" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/projects/nanovllmomni.png" alt="" /></div>
+  <div id="lb-run-2026wx" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2026无锡.jpg" alt="" /></div>
+  <div id="lb-run-2025xa" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2025西安全.jpg" alt="" /></div>
+  <div id="lb-run-2025bjh" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2025北京半.jpg" alt="" /></div>
+  <div id="lb-run-2024bkk" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2024曼谷.jpg" alt="" /></div>
+  <div id="lb-run-2023bj" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2023北京.jpg" alt="" /></div>
+  <div id="lb-run-2019xa" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2019西安.jpg" alt="" /></div>
+  <div id="lb-run-2017yl" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2017杨凌.png" alt="" /></div>
+  <div id="lb-run-2016ln" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2016李宁.png" alt="" /></div>
+  <div id="lb-run-2015cq" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2015城墙.jpg" alt="" /></div>
+  <div id="lb-run-2015yl" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2015杨凌.png" alt="" /></div>
+  <div id="lb-run-2015hl" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2015欢乐跑.jpg" alt="" /></div>
+  <div id="lb-run-2015ln" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2015李宁.jpg" alt="" /></div>
+  <div id="lb-run-2014cq" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2014城墙.jpg" alt="" /></div>
+  <div id="lb-run-2014ln" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2014李宁.jpg" alt="" /></div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-				document.querySelectorAll('.repo-stars').forEach(function (el) {
-					var repo = el.getAttribute('data-repo');
-					if (!repo) return;
-					fetch('https://api.github.com/repos/' + repo)
-						.then(function (response) { return response.json(); })
-						.then(function (data) {
-							if (data && typeof data.stargazers_count === 'number') {
-								el.textContent = '★ ' + data.stargazers_count;
-							}
-						})
-						.catch(function () {});
-				});
-			</script>
+  <script>
+    document.querySelectorAll('.repo-stars').forEach(function (el) {
+      var repo = el.getAttribute('data-repo');
+      if (!repo) return;
+      fetch('https://api.github.com/repos/' + repo)
+        .then(function (response) { return response.json(); })
+        .then(function (data) {
+          if (data && typeof data.stargazers_count === 'number') {
+            el.textContent = '★ ' + data.stargazers_count;
+          }
+        })
+        .catch(function () {});
+    });
 
-	</body>
+    (function () {
+      var links = document.querySelectorAll('.site-nav a');
+      var sections = [];
+      links.forEach(function (a) {
+        var id = a.getAttribute('href').slice(1);
+        var el = document.getElementById(id);
+        if (el) sections.push({ link: a, el: el });
+      });
+      function onScroll() {
+        var pos = window.scrollY + 120;
+        var current = sections[0];
+        sections.forEach(function (s) {
+          if (s.el.offsetTop <= pos) current = s;
+        });
+        links.forEach(function (a) { a.classList.remove('is-active'); });
+        if (current) current.link.classList.add('is-active');
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+
+</body>
 </html>
