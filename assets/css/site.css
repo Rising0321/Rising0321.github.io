@@ -257,14 +257,16 @@ main {
 /* ── Publications & projects ── */
 
 .paper-list,
-.project-list {
+.project-list,
+.talk-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
 .paper-card,
-.project-card {
+.project-card,
+.talk-card {
   display: grid;
   grid-template-columns: 148px 1fr;
   gap: 1.25rem;
@@ -277,13 +279,15 @@ main {
 }
 
 .paper-card:hover,
-.project-card:hover {
+.project-card:hover,
+.talk-card:hover {
   border-color: rgba(61, 111, 212, 0.25);
   transform: translateY(-2px);
 }
 
 .paper-thumb a,
-.project-thumb a {
+.project-thumb a,
+.talk-thumb a {
   display: block;
   border-radius: var(--radius);
   overflow: hidden;
@@ -291,14 +295,16 @@ main {
 }
 
 .paper-thumb img,
-.project-thumb img {
+.project-thumb img,
+.talk-thumb img {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
 }
 
 .paper-body h3,
-.project-body h3 {
+.project-body h3,
+.talk-body h3 {
   font-family: var(--font-body);
   font-size: 1.02rem;
   font-weight: 600;
@@ -377,6 +383,45 @@ main {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--ink-muted);
+}
+
+.talk-body h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.talk-body h3 a:hover {
+  color: var(--trajectory);
+}
+
+.talk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.talk-views {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #c4613a;
+}
+
+.talk-links a {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: var(--ink-muted);
+  border: 1px solid var(--line);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.talk-links a:hover {
+  border-color: #00a1d6;
+  color: #00a1d6;
 }
 
 /* ── Marathon timeline ── */
@@ -601,11 +646,13 @@ main {
   .hero-thesis { text-align: left; }
 
   .paper-card,
-  .project-card {
+  .project-card,
+  .talk-card {
     grid-template-columns: 1fr;
   }
 
-  .paper-thumb { max-width: 200px; }
+  .paper-thumb,
+  .talk-thumb { max-width: 200px; }
 
   .run-item {
     grid-template-columns: 1fr;
@@ -628,5 +675,6 @@ main {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .paper-card:hover,
-  .project-card:hover { transform: none; }
+  .project-card:hover,
+  .talk-card:hover { transform: none; }
 }

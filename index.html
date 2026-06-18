@@ -17,6 +17,7 @@
       <li><a href="#one">About</a></li>
       <li><a href="#two">Publications</a></li>
       <li><a href="#opensource">Open Source</a></li>
+      <li><a href="#talks">Talks</a></li>
       <li><a href="#three">Marathons</a></li>
       <li><a href="#four">Service</a></li>
       <li><a href="#five">Honors</a></li>
@@ -257,6 +258,15 @@
       </div>
     </section>
 
+    <!-- Selected Talks -->
+    <section id="talks" class="section">
+      <header class="section-header">
+        <h2>Selected Talks<span class="section-cn">（精选报告）</span></h2>
+      </header>
+
+      <div id="talk-list" class="talk-list" aria-live="polite"></div>
+    </section>
+
     <!-- Marathons -->
     <section id="three" class="section">
       <header class="section-header">
@@ -483,6 +493,46 @@
   <div id="lb-run-2014ln" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2014李宁.jpg" alt="" /></div>
 
   <script>
+    function formatViews(n) {
+      if (typeof n !== 'number' || n < 0) return '';
+      if (n >= 10000) {
+        var wan = (n / 10000).toFixed(1).replace(/\.0$/, '');
+        return wan + ' 万播放';
+      }
+      return n.toLocaleString('zh-CN') + ' 播放';
+    }
+
+    fetch('data/talks.json')
+      .then(function (response) { return response.json(); })
+      .then(function (talks) {
+        var list = document.getElementById('talk-list');
+        if (!list || !Array.isArray(talks)) return;
+        talks.forEach(function (talk, i) {
+          var lbId = 'lb-talk-' + i;
+          var card = document.createElement('article');
+          card.className = 'talk-card';
+          card.innerHTML =
+            '<div class="talk-thumb">' +
+              '<a href="#' + lbId + '"><img src="' + talk.thumb + '" alt="" loading="lazy" /></a>' +
+            '</div>' +
+            '<div class="talk-body">' +
+              '<h3><a href="' + talk.url + '" target="_blank" rel="noopener noreferrer">' + talk.title + '</a></h3>' +
+              '<div class="talk-meta">' +
+                '<span class="talk-views">' + formatViews(talk.views) + '</span>' +
+                '<span class="talk-links"><a href="' + talk.url + '" target="_blank" rel="noopener noreferrer">Bilibili</a></span>' +
+              '</div>' +
+            '</div>';
+          list.appendChild(card);
+
+          var lb = document.createElement('div');
+          lb.id = lbId;
+          lb.className = 'lightbox-target';
+          lb.innerHTML = '<a href="#" class="lightbox-close">close</a><img src="' + talk.thumb + '" alt="" />';
+          document.body.appendChild(lb);
+        });
+      })
+      .catch(function () {});
+
     document.querySelectorAll('.repo-stars').forEach(function (el) {
       var repo = el.getAttribute('data-repo');
       if (!repo) return;
