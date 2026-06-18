@@ -156,13 +156,12 @@ button:focus-visible {
 }
 
 .hero-text .name-en {
-  font-family: var(--font-display);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: clamp(1.85rem, 4.5vw, 2.65rem);
-  font-weight: 700;
-  line-height: 1.6;
-  margin: 0 0 0.15rem;
-  padding-bottom: 0.45em;
-  letter-spacing: -0.02em;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 0.2rem;
+  letter-spacing: -0.01em;
 }
 
 .hero-text .name-cn {
