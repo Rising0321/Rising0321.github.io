@@ -4,55 +4,55 @@
     "title": "【学习小记】：一个小时从强化学习0基础到理解GRPO",
     "url": "https://www.bilibili.com/video/BV1s16UB7Eop/",
     "thumb": "images/talks/GRPO.png",
-    "views": 24294
+    "views": 24317
   },
   {
     "bvid": "BV12m2WBhE1L",
     "title": "浅谈当下深度生成模型：从VAE、GAN、Diffusion、Flow Matching到世界模型",
     "url": "https://www.bilibili.com/video/BV12m2WBhE1L/",
     "thumb": "images/talks/Diffusion.png",
-    "views": 11072
+    "views": 11093
   },
   {
     "bvid": "BV1F44y1X7o6",
     "title": "Neural ODE, CDE... 神经微分方程大家族",
     "url": "https://www.bilibili.com/video/BV1F44y1X7o6/",
     "thumb": "images/talks/NeuralODE.png",
-    "views": 4650
+    "views": 4653
   },
   {
     "bvid": "BV14hpneXEXz",
     "title": "深入浅出讲一讲大模型的Scaling Law(缩放定律)",
     "url": "https://www.bilibili.com/video/BV14hpneXEXz/",
     "thumb": "images/talks/scaling-law.png",
-    "views": 8664
+    "views": 8665
   },
   {
     "bvid": "BV1HrLB6XE6Q",
     "title": "40分钟了解OPD的主要工作：为什么RL时代还需要On-Policy Distillation",
     "url": "https://www.bilibili.com/video/BV1HrLB6XE6Q/",
     "thumb": "images/talks/OPD.png",
-    "views": 11605
+    "views": 11660
   },
   {
     "bvid": "BV1cdTL6iE8W",
     "title": "现代生成模型为什么都在换掉VAE Latent？从Latent Diffusion到RAE、JiT与Tuna-2 | NextTryTV",
     "url": "https://www.bilibili.com/video/BV1cdTL6iE8W/",
     "thumb": "images/talks/whyvae.png",
-    "views": 9797
+    "views": 9833
   },
   {
     "bvid": "BV1wWEA6FEqY",
     "title": "从DMD到Self/Causal Forcing及其++版本的8篇论文：视频生成模型的蒸馏是规模化部署的必经之路吗？",
     "url": "https://www.bilibili.com/video/BV1wWEA6FEqY/",
     "thumb": "images/talks/DMD.png",
-    "views": 2345
+    "views": 2359
   },
   {
     "bvid": "BV1BS94BGEXh",
     "title": "混元世界模型1.0到2.0：从8篇文章看混元世界模型的演化史",
     "url": "https://www.bilibili.com/video/BV1BS94BGEXh/",
     "thumb": "images/talks/HY-World.png",
-    "views": 1897
+    "views": 1902
   }
 ]
