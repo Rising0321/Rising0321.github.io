@@ -261,6 +261,60 @@ main {
 
 /* ── Publications & projects ── */
 
+.publication-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.publication-filters[hidden],
+.paper-card[hidden] { display: none; }
+
+.publication-filters button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+}
+
+.publication-filters button:hover {
+  border-color: var(--trajectory);
+  color: var(--trajectory);
+}
+
+.publication-filters button[aria-pressed="true"] {
+  background: var(--void);
+  border-color: var(--void);
+  color: var(--surface);
+}
+
+.publication-filters button:focus-visible {
+  outline: 2px solid var(--trajectory);
+  outline-offset: 3px;
+}
+
+.filter-count { opacity: 0.7; font-variant-numeric: tabular-nums; }
+.publication-count {
+  margin: 0 0 1rem;
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+}
+.publication-count:empty { display: none; }
+
 .paper-list,
 .project-list,
 .talk-list {

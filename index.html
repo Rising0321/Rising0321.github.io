@@ -84,8 +84,19 @@
         <h2>Publications<span class="section-cn">（一些微小的工作）</span></h2>
       </header>
 
-      <div class="paper-list">
-        <article class="paper-card">
+      <div class="publication-filters" role="group" aria-label="Filter publications by research topic" hidden>
+        <button type="button" data-filter="all" aria-pressed="true" aria-controls="publication-list">All <span class="filter-count" aria-hidden="true"></span></button>
+        <button type="button" data-filter="first-author" aria-pressed="false" aria-controls="publication-list">First Author <span class="filter-count" aria-hidden="true"></span></button>
+        <button type="button" data-filter="dynamic-graph-learning" aria-pressed="false" aria-controls="publication-list">Dynamic Graph Learning <span class="filter-count" aria-hidden="true"></span></button>
+        <button type="button" data-filter="spatiotemporal-trajectories" aria-pressed="false" aria-controls="publication-list">Spatiotemporal Trajectories <span class="filter-count" aria-hidden="true"></span></button>
+        <button type="button" data-filter="urban-computing" aria-pressed="false" aria-controls="publication-list">Urban Computing <span class="filter-count" aria-hidden="true"></span></button>
+        <button type="button" data-filter="multimodal-llm" aria-pressed="false" aria-controls="publication-list">Multimodal LLM <span class="filter-count" aria-hidden="true"></span></button>
+        <button type="button" data-filter="user-simulation" aria-pressed="false" aria-controls="publication-list">User Simulation <span class="filter-count" aria-hidden="true"></span></button>
+      </div>
+      <p class="publication-count" role="status" aria-live="polite" aria-atomic="true"></p>
+
+      <div class="paper-list" id="publication-list">
+        <article class="paper-card" data-categories="user-simulation">
           <div class="paper-thumb">
             <a href="#lb-userida"><img src="images/papers/userida.png" alt="UserIDA paper figure" /></a>
           </div>
@@ -99,7 +110,7 @@
           </div>
         </article>
 
-        <article class="paper-card">
+        <article class="paper-card" data-categories="spatiotemporal-trajectories urban-computing user-simulation">
           <div class="paper-thumb">
             <a href="#lb-sempoi"><img src="images/papers/sempoi.png" alt="Sem POI paper figure" /></a>
           </div>
@@ -110,7 +121,7 @@
           </div>
         </article>
 
-        <article class="paper-card">
+        <article class="paper-card" data-categories="urban-computing user-simulation">
           <div class="paper-thumb">
             <a href="#lb-trip"><img src="images/papers/trip.png" alt="trip paper figure" /></a>
           </div>
@@ -124,7 +135,7 @@
           </div>
         </article>
 
-        <article class="paper-card">
+        <article class="paper-card" data-categories="first-author spatiotemporal-trajectories urban-computing">
           <div class="paper-thumb">
             <a href="#lb-sig2gps"><img src="images/papers/sig2GPS.png" alt="Think over Trajectories paper figure" /></a>
           </div>
@@ -138,7 +149,7 @@
           </div>
         </article>
 
-        <article class="paper-card">
+        <article class="paper-card" data-categories="first-author multimodal-llm">
           <div class="paper-thumb">
             <a href="#lb-agl1k"><img src="images/papers/AGL1K.png" alt="The Sonar Moment paper figure" /></a>
           </div>
@@ -154,7 +165,7 @@
           </div>
         </article>
 
-        <article class="paper-card">
+        <article class="paper-card" data-categories="first-author spatiotemporal-trajectories urban-computing multimodal-llm">
           <div class="paper-thumb">
             <a href="#lb-vgls"><img src="images/papers/VGLS.png" alt="Eyes Will Shut paper figure" /></a>
           </div>
@@ -168,7 +179,7 @@
           </div>
         </article>
 
-        <article class="paper-card">
+        <article class="paper-card" data-categories="first-author urban-computing">
           <div class="paper-thumb">
             <a href="#lb-uic"><img src="images/papers/UIC.png" alt="Urban In-Context Learning paper figure" /></a>
           </div>
@@ -182,7 +193,7 @@
           </div>
         </article>
 
-        <article class="paper-card">
+        <article class="paper-card" data-categories="first-author spatiotemporal-trajectories urban-computing user-simulation">
           <div class="paper-thumb">
             <a href="#lb-kdd2025"><img src="images/papers/KDD2025.png" alt="Large-scale Human Mobility paper figure" /></a>
           </div>
@@ -193,7 +204,7 @@
           </div>
         </article>
 
-        <article class="paper-card">
+        <article class="paper-card" data-categories="first-author spatiotemporal-trajectories urban-computing">
           <div class="paper-thumb">
             <a href="#lb-raw"><img src="images/papers/RAW.png" alt="Regions are Who Walk Them paper figure" /></a>
           </div>
@@ -208,7 +219,7 @@
           </div>
         </article>
 
-        <article class="paper-card">
+        <article class="paper-card" data-categories="dynamic-graph-learning urban-computing">
           <div class="paper-thumb">
             <a href="#lb-gdcf"><img src="images/papers/GDCF.png" alt="Generic and dynamic graph representation learning paper figure" /></a>
           </div>
@@ -223,7 +234,7 @@
           </div>
         </article>
 
-        <article class="paper-card">
+        <article class="paper-card" data-categories="first-author dynamic-graph-learning urban-computing">
           <div class="paper-thumb">
             <a href="#lb-hmod"><img src="images/papers/HMOD.png" alt="Dynamic graph learning paper figure" /></a>
           </div>
@@ -238,7 +249,7 @@
           </div>
         </article>
 
-        <article class="paper-card">
+        <article class="paper-card" data-categories="dynamic-graph-learning">
           <div class="paper-thumb">
             <a href="#lb-dhntsp"><img src="images/papers/DHNTSP.png" alt="Deep heterogeneous network paper figure" /></a>
           </div>
@@ -537,6 +548,7 @@
   <div id="lb-run-2014ln" class="lightbox-target"><a href="#" class="lightbox-close">close</a><img src="images/runs/2014李宁.jpg" alt="" /></div>
 
   <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/publications.js"></script>
   <script>
     function formatViews(n) {
       if (typeof n !== 'number' || n < 0) return '';
