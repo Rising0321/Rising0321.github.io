@@ -599,6 +599,19 @@ main {
   letter-spacing: 0.04em;
 }
 
+.visitor-title {
+  margin: 0 0 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.visitor-title span { color: var(--ink-muted); }
+.visitor-counter { display: inline-block; max-width: 100%; }
+.visitor-counter img { display: block; max-width: 100%; height: auto; border-radius: var(--radius); }
+.visitor-note { margin: 0.75rem 0 0; font-size: 0.65rem; }
+
 /* ── Lightbox (minimal) ── */
 
 .lightbox-target {
@@ -614,7 +627,8 @@ main {
   transition: opacity 0.25s;
 }
 
-.lightbox-target:target {
+.lightbox-target:target:not(.is-closed),
+.lightbox-target.is-open {
   opacity: 1;
   pointer-events: auto;
 }

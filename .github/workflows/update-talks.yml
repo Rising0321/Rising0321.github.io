@@ -12,35 +12,60 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Fetch play counts and update talks.json
+        id: fetch
         run: |
           python3 << 'PY'
           import json
           import urllib.request
+          import time
 
           with open("data/talks.json", encoding="utf-8") as f:
               talks = json.load(f)
 
+          failed = []
           for talk in talks:
               bvid = talk["bvid"]
-              req = urllib.request.Request(
-                  f"https://api.bilibili.com/x/web-interface/view?bvid={bvid}",
-                  headers={"User-Agent": "Mozilla/5.0"},
-              )
-              with urllib.request.urlopen(req, timeout=20) as resp:
-                  data = json.loads(resp.read().decode())
-              if data.get("code") == 0:
-                  talk["views"] = data["data"]["stat"]["view"]
-                  talk["title"] = data["data"]["title"]
+              for attempt in range(3):
+                  try:
+                      req = urllib.request.Request(
+                          f"https://api.bilibili.com/x/web-interface/view?bvid={bvid}",
+                          headers={
+                              "User-Agent": "Mozilla/5.0",
+                              "Referer": "https://www.bilibili.com/",
+                          },
+                      )
+                      with urllib.request.urlopen(req, timeout=20) as resp:
+                          data = json.loads(resp.read().decode())
+                      if data.get("code") != 0:
+                          raise ValueError(f"Bilibili API code {data.get('code')}")
+                      views = data["data"]["stat"]["view"]
+                      title = data["data"]["title"]
+                      if type(views) is not int or views < 0 or not isinstance(title, str) or not title:
+                          raise ValueError("Invalid video statistics or title")
+                      talk.update(views=views, title=title)
+                      print(f"Updated {bvid}: {views} views")
+                      break
+                  except (OSError, ValueError, KeyError, TypeError) as exc:
+                      print(f"{bvid}: attempt {attempt + 1}/3 failed: {exc}")
+                      if attempt < 2:
+                          time.sleep(2 ** (attempt + 1))
+                      else:
+                          print(f"::warning::Could not update {bvid}; retaining previous data")
+                          failed.append(bvid)
+
 
           with open("data/talks.json", "w", encoding="utf-8") as f:
               json.dump(talks, f, ensure_ascii=False, indent=2)
               f.write("\n")
+          if failed:
+              raise SystemExit(f"Failed to refresh {len(failed)}/{len(talks)} videos: {', '.join(failed)}")
           PY
 
       - name: Commit if changed
+        if: ${{ !cancelled() && steps.fetch.outcome != 'skipped' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
