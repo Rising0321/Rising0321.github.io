@@ -25,21 +25,21 @@
     "title": "深入浅出讲一讲大模型的Scaling Law(缩放定律)",
     "url": "https://www.bilibili.com/video/BV14hpneXEXz/",
     "thumb": "images/talks/scaling-law.png",
-    "views": 8824
+    "views": 8834
   },
   {
     "bvid": "BV1HrLB6XE6Q",
     "title": "40分钟了解OPD的主要工作：为什么RL时代还需要On-Policy Distillation",
     "url": "https://www.bilibili.com/video/BV1HrLB6XE6Q/",
     "thumb": "images/talks/OPD.png",
-    "views": 11839
+    "views": 13603
   },
   {
     "bvid": "BV1cdTL6iE8W",
     "title": "现代生成模型为什么都在换掉VAE Latent？从Latent Diffusion到RAE、JiT与Tuna-2 | NextTryTV",
     "url": "https://www.bilibili.com/video/BV1cdTL6iE8W/",
     "thumb": "images/talks/whyvae.png",
-    "views": 9915
+    "views": 11510
   },
   {
     "bvid": "BV1wWEA6FEqY",
