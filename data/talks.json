@@ -8,8 +8,8 @@
     "stats_status": "fresh",
     "likes": 1163,
     "favorites": 3699,
-    "views_updated_at": "2026-10-20T11:04:46+00:00",
-    "engagement_updated_at": "2026-10-20T11:04:46+00:00"
+    "views_updated_at": "2026-10-20T11:07:44+00:00",
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
   },
   {
     "bvid": "BV12m2WBhE1L",
@@ -20,8 +20,8 @@
     "stats_status": "fresh",
     "likes": 454,
     "favorites": 1365,
-    "views_updated_at": "2026-10-20T11:04:46+00:00",
-    "engagement_updated_at": "2026-10-20T11:04:46+00:00"
+    "views_updated_at": "2026-10-20T11:07:44+00:00",
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
   },
   {
     "bvid": "BV1F44y1X7o6",
@@ -32,8 +32,8 @@
     "stats_status": "fresh",
     "likes": 132,
     "favorites": 302,
-    "views_updated_at": "2026-10-20T11:04:46+00:00",
-    "engagement_updated_at": "2026-10-20T11:04:46+00:00"
+    "views_updated_at": "2026-10-20T11:07:44+00:00",
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
   },
   {
     "bvid": "BV14hpneXEXz",
@@ -44,8 +44,8 @@
     "stats_status": "fresh",
     "likes": 235,
     "favorites": 590,
-    "views_updated_at": "2026-10-20T11:04:46+00:00",
-    "engagement_updated_at": "2026-10-20T11:04:46+00:00"
+    "views_updated_at": "2026-10-20T11:07:44+00:00",
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
   },
   {
     "bvid": "BV1HrLB6XE6Q",
@@ -56,8 +56,8 @@
     "stats_status": "fresh",
     "likes": 623,
     "favorites": 1503,
-    "views_updated_at": "2026-10-20T11:04:46+00:00",
-    "engagement_updated_at": "2026-10-20T11:04:46+00:00"
+    "views_updated_at": "2026-10-20T11:07:44+00:00",
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
   },
   {
     "bvid": "BV1cdTL6iE8W",
@@ -68,8 +68,8 @@
     "stats_status": "fresh",
     "likes": 643,
     "favorites": 1549,
-    "views_updated_at": "2026-10-20T11:04:46+00:00",
-    "engagement_updated_at": "2026-10-20T11:04:46+00:00"
+    "views_updated_at": "2026-10-20T11:07:44+00:00",
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
   },
   {
     "bvid": "BV1wWEA6FEqY",
@@ -80,8 +80,8 @@
     "stats_status": "fresh",
     "likes": 134,
     "favorites": 238,
-    "views_updated_at": "2026-10-20T11:04:46+00:00",
-    "engagement_updated_at": "2026-10-20T11:04:46+00:00"
+    "views_updated_at": "2026-10-20T11:07:44+00:00",
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
   },
   {
     "bvid": "BV1BS94BGEXh",
@@ -92,8 +92,8 @@
     "stats_status": "fresh",
     "likes": 67,
     "favorites": 102,
-    "views_updated_at": "2026-10-20T11:04:46+00:00",
-    "engagement_updated_at": "2026-10-20T11:04:46+00:00"
+    "views_updated_at": "2026-10-20T11:07:44+00:00",
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
   },
   {
     "kind": "season",
@@ -104,11 +104,11 @@
     "thumb": "images/talks/paper-writing.svg",
     "views": 4702,
     "video_count": 15,
-    "views_updated_at": "2026-10-20T11:06:21+00:00",
+    "views_updated_at": "2026-10-20T11:07:44+00:00",
     "stats_status": "fresh",
     "likes": 123,
     "favorites": 151,
-    "engagement_updated_at": "2026-10-20T11:06:21+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
   },
   {
     "kind": "series",
@@ -119,10 +119,10 @@
     "thumb": "images/talks/causal-inference.svg",
     "views": 9373,
     "video_count": 14,
-    "views_updated_at": "2026-10-20T11:04:46+00:00",
+    "views_updated_at": "2026-10-20T11:07:44+00:00",
     "stats_status": "fresh",
     "likes": 158,
     "favorites": 241,
-    "engagement_updated_at": "2026-10-20T11:04:46+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
   }
 ]
