@@ -1,5 +1,6 @@
 """Refresh public Bilibili statistics, preserving old values on upstream failures."""
 import json
+import hashlib
 import os
 import time
 import urllib.error
@@ -16,10 +17,30 @@ class UpstreamError(Exception):
 class Client:
     def __init__(self):
         self.blocked = set()
+        self.wbi_key = None
 
-    def get(self, path, **params):
+    def sign(self, params):
+        if self.wbi_key is None:
+            images = self.get("/x/web-interface/nav")["wbi_img"]
+            raw = "".join(Path(urllib.parse.urlparse(images[name]).path).stem
+                          for name in ("img_url", "sub_url"))
+            order = (46, 47, 18, 2, 53, 8, 23, 32, 15, 50, 10, 31, 58, 3, 45, 35,
+                     27, 43, 5, 49, 33, 9, 42, 19, 29, 28, 14, 39, 12, 38, 41, 13)
+            if len(raw) != 64:
+                raise UpstreamError("Invalid WBI signing keys")
+            self.wbi_key = "".join(raw[index] for index in order)
+        values = dict(params, wts=int(time.time()))
+        values = {key: "".join(c for c in str(value) if c not in "!'()*")
+                  for key, value in sorted(values.items())}
+        query = urllib.parse.urlencode(values)
+        values["w_rid"] = hashlib.md5((query + self.wbi_key).encode()).hexdigest()
+        return values
+
+    def get(self, path, signed=False, **params):
         if path in self.blocked:
             raise UpstreamError(f"{path}: blocked earlier in this run; not retrying")
+        if signed:
+            params = self.sign(params)
         url = "https://api.bilibili.com" + path + "?" + urllib.parse.urlencode(params)
         for attempt in range(3):
             time.sleep(1)
@@ -34,7 +55,11 @@ class Client:
                 if payload.get("code") in (-412, -352):
                     self.blocked.add(path)
                     raise UpstreamError(f"{path}: Bilibili risk control ({payload['code']})")
-                if payload.get("code") != 0:
+                # Anonymous navigation responses still provide public WBI keys.
+                anonymous_keys = (path == "/x/web-interface/nav"
+                                  and payload.get("code") == -101
+                                  and payload.get("data", {}).get("wbi_img"))
+                if payload.get("code") != 0 and not anonymous_keys:
                     raise UpstreamError(f"{path}: API code {payload.get('code')}")
                 return payload["data"]
             except urllib.error.HTTPError as exc:
@@ -62,6 +87,7 @@ def collection_videos(client, talk):
     while True:
         if talk["kind"] == "season":
             data = client.get("/x/polymer/web-space/seasons_archives_list",
+                              signed=True,
                               mid=talk["mid"], season_id=talk["collection_id"],
                               page_num=page, page_size=30)
         else:

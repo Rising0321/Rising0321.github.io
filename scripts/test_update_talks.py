@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import unittest
 from unittest.mock import Mock, patch
 from urllib.error import HTTPError
@@ -30,6 +31,15 @@ def page(items, total):
 
 
 class StatsTests(unittest.TestCase):
+    @patch("update_talks.time.time", return_value=1700000000)
+    def test_wbi_signing_sorts_and_filters_parameters(self, clock):
+        client = Client()
+        client.wbi_key = "test-key"
+        signed = client.sign({"z": "a!b", "a": 2})
+        query = "a=2&wts=1700000000&z=ab"
+        self.assertEqual(signed["w_rid"], hashlib.md5((query + "test-key").encode()).hexdigest())
+        self.assertEqual(signed["z"], "ab")
+
     def test_video_uses_current_metadata_endpoint(self):
         client = Mock()
         client.get.return_value = {"stat": {"view": 12, "like": 0, "favorite": 4}}
