@@ -83,7 +83,7 @@ def collection_videos(client, talk):
 
 
 def video_stats(client, bvid):
-    data = client.get("/x/web-interface/view", bvid=bvid)
+    data = client.get("/x/web-interface/wbi/view", bvid=bvid)
     stat = data["stat"]
     return {"views": count(stat["view"]), "likes": count(stat["like"]),
             "favorites": count(stat["favorite"])}

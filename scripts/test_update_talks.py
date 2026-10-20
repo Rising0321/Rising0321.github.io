@@ -1,6 +1,6 @@
 import copy
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 from urllib.error import HTTPError
 
 from update_talks import Client, UpstreamError, collection_videos, refresh
@@ -30,6 +30,17 @@ def page(items, total):
 
 
 class StatsTests(unittest.TestCase):
+    def test_video_uses_current_metadata_endpoint(self):
+        client = Mock()
+        client.get.return_value = {"stat": {"view": 12, "like": 0, "favorite": 4}}
+        talk = {"bvid": "example"}
+        success, errors = refresh(talk, client, "now")
+        client.get.assert_called_once_with("/x/web-interface/wbi/view", bvid="example")
+        self.assertTrue(success)
+        self.assertFalse(errors)
+        self.assertEqual(talk["likes"], 0)
+        self.assertEqual(talk["stats_status"], "fresh")
+
     def test_pagination_and_deduplication(self):
         client = FakeClient([page([video("a", 5), video("b", 7)], 3),
                              page([video("b", 7), video("c", 9)], 3)])
@@ -82,7 +93,7 @@ class StatsTests(unittest.TestCase):
         client = Client()
         for bvid in ("a", "b"):
             with self.assertRaises(UpstreamError):
-                client.get("/x/web-interface/view", bvid=bvid)
+                client.get("/x/web-interface/wbi/view", bvid=bvid)
         self.assertEqual(urlopen.call_count, 1)
 
 
