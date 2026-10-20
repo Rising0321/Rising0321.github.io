@@ -73,7 +73,7 @@
     "views": 4702,
     "video_count": 15,
     "views_updated_at": "2026-10-20T11:00:31+00:00",
-    "stats_status": "partial"
+    "stats_status": "stale"
   },
   {
     "kind": "series",
@@ -84,7 +84,7 @@
     "thumb": "images/talks/causal-inference.svg",
     "views": 9373,
     "video_count": 14,
-    "views_updated_at": "2026-10-20T11:00:31+00:00",
+    "views_updated_at": "2026-10-20T11:02:21+00:00",
     "stats_status": "partial"
   }
 ]
