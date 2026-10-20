@@ -4,12 +4,12 @@
     "title": "【学习小记】：一个小时从强化学习0基础到理解GRPO",
     "url": "https://www.bilibili.com/video/BV1s16UB7Eop/",
     "thumb": "images/talks/GRPO.png",
-    "views": 25573,
+    "views": 25578,
     "stats_status": "fresh",
     "likes": 1163,
     "favorites": 3699,
-    "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "views_updated_at": "2026-10-20T13:16:36+00:00",
+    "engagement_updated_at": "2026-10-20T13:16:36+00:00",
     "title_en": "From Zero Reinforcement Learning Background to Understanding GRPO in One Hour"
   },
   {
@@ -17,12 +17,12 @@
     "title": "浅谈当下深度生成模型：从VAE、GAN、Diffusion、Flow Matching到世界模型",
     "url": "https://www.bilibili.com/video/BV12m2WBhE1L/",
     "thumb": "images/talks/Diffusion.png",
-    "views": 12513,
+    "views": 12516,
     "stats_status": "fresh",
-    "likes": 454,
+    "likes": 456,
     "favorites": 1365,
-    "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "views_updated_at": "2026-10-20T13:16:36+00:00",
+    "engagement_updated_at": "2026-10-20T13:16:36+00:00",
     "title_en": "Deep Generative Models: From VAEs, GANs, Diffusion, and Flow Matching to World Models"
   },
   {
@@ -34,8 +34,8 @@
     "stats_status": "fresh",
     "likes": 132,
     "favorites": 302,
-    "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "views_updated_at": "2026-10-20T13:16:36+00:00",
+    "engagement_updated_at": "2026-10-20T13:16:36+00:00",
     "title_en": "Neural ODEs, CDEs, and the Family of Neural Differential Equations"
   },
   {
@@ -43,12 +43,12 @@
     "title": "深入浅出讲一讲大模型的Scaling Law(缩放定律)",
     "url": "https://www.bilibili.com/video/BV14hpneXEXz/",
     "thumb": "images/talks/scaling-law.png",
-    "views": 8913,
+    "views": 8914,
     "stats_status": "fresh",
     "likes": 235,
     "favorites": 590,
-    "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "views_updated_at": "2026-10-20T13:16:36+00:00",
+    "engagement_updated_at": "2026-10-20T13:16:36+00:00",
     "title_en": "An Accessible Introduction to Scaling Laws for Large Models"
   },
   {
@@ -56,12 +56,12 @@
     "title": "40分钟了解OPD的主要工作：为什么RL时代还需要On-Policy Distillation",
     "url": "https://www.bilibili.com/video/BV1HrLB6XE6Q/",
     "thumb": "images/talks/OPD.png",
-    "views": 14441,
+    "views": 14443,
     "stats_status": "fresh",
     "likes": 623,
     "favorites": 1503,
-    "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "views_updated_at": "2026-10-20T13:16:36+00:00",
+    "engagement_updated_at": "2026-10-20T13:16:36+00:00",
     "title_en": "On-Policy Distillation in 40 Minutes: Why It Still Matters in the RL Era"
   },
   {
@@ -69,12 +69,12 @@
     "title": "现代生成模型为什么都在换掉VAE Latent？从Latent Diffusion到RAE、JiT与Tuna-2 | NextTryTV",
     "url": "https://www.bilibili.com/video/BV1cdTL6iE8W/",
     "thumb": "images/talks/whyvae.png",
-    "views": 12397,
+    "views": 12404,
     "stats_status": "fresh",
     "likes": 643,
     "favorites": 1549,
-    "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "views_updated_at": "2026-10-20T13:16:36+00:00",
+    "engagement_updated_at": "2026-10-20T13:16:36+00:00",
     "title_en": "Why Are Modern Generative Models Replacing VAE Latents? From Latent Diffusion to RAE, JiT, and Tuna-2 | NextTryTV"
   },
   {
@@ -86,8 +86,8 @@
     "stats_status": "fresh",
     "likes": 134,
     "favorites": 238,
-    "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "views_updated_at": "2026-10-20T13:16:36+00:00",
+    "engagement_updated_at": "2026-10-20T13:16:36+00:00",
     "title_en": "From DMD to Self/Causal Forcing and Their ++ Variants: Eight Papers on Distilling Video Models for Deployment at Scale"
   },
   {
@@ -99,8 +99,8 @@
     "stats_status": "fresh",
     "likes": 67,
     "favorites": 102,
-    "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "views_updated_at": "2026-10-20T13:16:36+00:00",
+    "engagement_updated_at": "2026-10-20T13:16:36+00:00",
     "title_en": "Hunyuan World Models 1.0 to 2.0: Tracing Their Evolution Through Eight Papers"
   },
   {
@@ -112,11 +112,11 @@
     "thumb": "images/talks/paper-writing.jpg",
     "views": 4702,
     "video_count": 15,
-    "views_updated_at": "2026-10-20T11:07:44+00:00",
+    "views_updated_at": "2026-10-20T13:16:36+00:00",
     "stats_status": "fresh",
     "likes": 123,
     "favorites": 151,
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "engagement_updated_at": "2026-10-20T13:16:36+00:00",
     "title_en": "A Guide to Scientific Paper Writing (Liu Xuefeng Edition)"
   },
   {
@@ -128,11 +128,11 @@
     "thumb": "images/talks/causal-inference.jpg",
     "views": 9373,
     "video_count": 14,
-    "views_updated_at": "2026-10-20T11:07:44+00:00",
+    "views_updated_at": "2026-10-20T13:16:36+00:00",
     "stats_status": "fresh",
     "likes": 158,
     "favorites": 241,
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "engagement_updated_at": "2026-10-20T13:16:36+00:00",
     "title_en": "An Introduction to Statistical Causal Inference"
   }
 ]
