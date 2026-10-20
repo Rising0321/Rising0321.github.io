@@ -9,7 +9,8 @@
     "likes": 1163,
     "favorites": 3699,
     "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "title_en": "From Zero Reinforcement Learning Background to Understanding GRPO in One Hour"
   },
   {
     "bvid": "BV12m2WBhE1L",
@@ -21,7 +22,8 @@
     "likes": 454,
     "favorites": 1365,
     "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "title_en": "Deep Generative Models: From VAEs, GANs, Diffusion, and Flow Matching to World Models"
   },
   {
     "bvid": "BV1F44y1X7o6",
@@ -33,7 +35,8 @@
     "likes": 132,
     "favorites": 302,
     "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "title_en": "Neural ODEs, CDEs, and the Family of Neural Differential Equations"
   },
   {
     "bvid": "BV14hpneXEXz",
@@ -45,7 +48,8 @@
     "likes": 235,
     "favorites": 590,
     "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "title_en": "An Accessible Introduction to Scaling Laws for Large Models"
   },
   {
     "bvid": "BV1HrLB6XE6Q",
@@ -57,7 +61,8 @@
     "likes": 623,
     "favorites": 1503,
     "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "title_en": "On-Policy Distillation in 40 Minutes: Why It Still Matters in the RL Era"
   },
   {
     "bvid": "BV1cdTL6iE8W",
@@ -69,7 +74,8 @@
     "likes": 643,
     "favorites": 1549,
     "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "title_en": "Why Are Modern Generative Models Replacing VAE Latents? From Latent Diffusion to RAE, JiT, and Tuna-2 | NextTryTV"
   },
   {
     "bvid": "BV1wWEA6FEqY",
@@ -81,7 +87,8 @@
     "likes": 134,
     "favorites": 238,
     "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "title_en": "From DMD to Self/Causal Forcing and Their ++ Variants: Eight Papers on Distilling Video Models for Deployment at Scale"
   },
   {
     "bvid": "BV1BS94BGEXh",
@@ -93,7 +100,8 @@
     "likes": 67,
     "favorites": 102,
     "views_updated_at": "2026-10-20T11:07:44+00:00",
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "title_en": "Hunyuan World Models 1.0 to 2.0: Tracing Their Evolution Through Eight Papers"
   },
   {
     "kind": "season",
@@ -101,14 +109,15 @@
     "collection_id": 4816957,
     "title": "科技论文写作指南（刘雪峰版）",
     "url": "https://space.bilibili.com/58844648/lists/4816957?type=season",
-    "thumb": "images/talks/paper-writing.svg",
+    "thumb": "images/talks/paper-writing.jpg",
     "views": 4702,
     "video_count": 15,
     "views_updated_at": "2026-10-20T11:07:44+00:00",
     "stats_status": "fresh",
     "likes": 123,
     "favorites": 151,
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "title_en": "A Guide to Scientific Paper Writing (Liu Xuefeng Edition)"
   },
   {
     "kind": "series",
@@ -116,13 +125,14 @@
     "collection_id": 3615906,
     "title": "统计因果推理入门",
     "url": "https://space.bilibili.com/58844648/lists/3615906?type=series",
-    "thumb": "images/talks/causal-inference.svg",
+    "thumb": "images/talks/causal-inference.jpg",
     "views": 9373,
     "video_count": 14,
     "views_updated_at": "2026-10-20T11:07:44+00:00",
     "stats_status": "fresh",
     "likes": 158,
     "favorites": 241,
-    "engagement_updated_at": "2026-10-20T11:07:44+00:00"
+    "engagement_updated_at": "2026-10-20T11:07:44+00:00",
+    "title_en": "An Introduction to Statistical Causal Inference"
   }
 ]

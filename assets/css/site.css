@@ -474,6 +474,13 @@ main {
   line-height: 1.6;
 }
 
+.talk-title-en {
+  margin: 0.45rem 0 0;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
 .talk-links a {
   font-family: var(--font-mono);
   font-size: 0.75rem;

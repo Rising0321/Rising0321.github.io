@@ -7,8 +7,8 @@
   }
 
   function formatCount(value) {
-    if (!Number.isFinite(value) || value < 0) return '暂不可用';
-    return value >= 10000 ? (value / 10000).toFixed(1).replace(/\.0$/, '') + ' 万' : value.toLocaleString('zh-CN');
+    if (!Number.isFinite(value) || value < 0) return '暂不可用 / Unavailable';
+    return value.toLocaleString('en-US');
   }
 
   fetch('data/talks.json')
@@ -20,7 +20,6 @@
       var list = document.getElementById('talk-list');
       if (!list || !Array.isArray(talks)) return;
       talks.forEach(function (talk, i) {
-        var isCollection = talk.kind === 'season' || talk.kind === 'series';
         var card = element('article', 'talk-card');
         var thumbnail = element('div', 'talk-thumb');
         var zoom = element('a');
@@ -40,23 +39,23 @@
         link.rel = 'noopener noreferrer';
         heading.appendChild(link);
         body.appendChild(heading);
-        if (isCollection) {
-          body.appendChild(element('p', 'talk-note', '合集' +
-            (Number.isInteger(talk.video_count) ? ' · ' + talk.video_count + ' 个视频' : '') +
-            ' · 各视频数据合计'));
+        if (talk.title_en) {
+          var translation = element('p', 'talk-title-en', talk.title_en);
+          translation.lang = 'en';
+          body.appendChild(translation);
         }
         var meta = element('div', 'talk-meta');
-        [['views', '播放'], ['likes', '点赞'], ['favorites', '收藏']].forEach(function (metric) {
+        [['views', '播放 / Views'], ['likes', '点赞 / Likes'], ['favorites', '收藏 / Favorites']].forEach(function (metric) {
           var stat = element('span', 'talk-views', metric[1] + ' ' + formatCount(talk[metric[0]]));
           var timestamp = metric[0] === 'views' ? talk.views_updated_at : talk.engagement_updated_at;
-          if (timestamp) stat.title = '更新于 ' + new Date(timestamp).toLocaleString('zh-CN');
+          if (timestamp) stat.title = '更新于 / Updated: ' + new Date(timestamp).toLocaleString();
           meta.appendChild(stat);
         });
         body.appendChild(meta);
         if (talk.stats_status === 'stale' || talk.stats_status === 'partial') {
           body.appendChild(element('p', 'talk-note',
-            talk.stats_status === 'stale' ? '统计同步暂不可用，已有数字为历史数据。' :
-              '播放量已更新；点赞和收藏暂未同步，已有数字为历史数据。'));
+            talk.stats_status === 'stale' ? '统计暂未同步 / Statistics unavailable; showing previously saved counts.' :
+              '点赞和收藏暂未同步 / Views updated; likes and favorites show previously saved counts.'));
         }
         card.appendChild(body);
         list.appendChild(card);
@@ -73,6 +72,6 @@
       });
     })
     .catch(function () {
-      document.getElementById('talk-list').textContent = '暂时无法加载视频列表，请稍后刷新。';
+      document.getElementById('talk-list').textContent = '暂时无法加载视频列表，请稍后刷新。 / Unable to load talks. Please try refreshing.';
     });
 })();
