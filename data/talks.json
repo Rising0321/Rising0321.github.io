@@ -104,8 +104,11 @@
     "thumb": "images/talks/paper-writing.svg",
     "views": 4702,
     "video_count": 15,
-    "views_updated_at": "2026-10-20T11:00:31+00:00",
-    "stats_status": "stale"
+    "views_updated_at": "2026-10-20T11:06:21+00:00",
+    "stats_status": "fresh",
+    "likes": 123,
+    "favorites": 151,
+    "engagement_updated_at": "2026-10-20T11:06:21+00:00"
   },
   {
     "kind": "series",
