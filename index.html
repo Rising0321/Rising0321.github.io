@@ -312,7 +312,28 @@
         <h2>Selected Talks<span class="section-cn">（精选报告）</span></h2>
       </header>
 
-      <div id="talk-list" class="talk-list" aria-live="polite"></div>
+      <div class="talk-intro">
+        <div class="prose-block" lang="zh-CN">
+          <p class="lang-tag">中文</p>
+          <p>作为一个博士生，常常需要汲取最前沿的知识，保持知识的不断更新。而遗憾的是，我并没有系统的获取前沿知识的渠道。所以我会自己逼着自己做一些前沿知识的讲解，放在B站上。因为学习并给人们讲清楚的过程，能够反哺自己学习。如果有明显的错误的话，网友们还可以给我指正。是一个很好的学习方法。这里分了两部分，一部分是我做得前沿知识的分享，一部分是我自学论文写作和因果学习（没学明白，已经放弃了）的视频，希望这些视频能够帮助到你，也欢迎你来批评指正。</p>
+        </div>
+        <div class="prose-block" lang="en">
+          <p class="lang-tag">EN</p>
+          <p>As a Ph.D. student, I often need to learn about the latest research and keep my knowledge up to date. Unfortunately, I don't have a systematic way of keeping up with new developments. So I push myself to explain what I've been learning in videos on Bilibili. Learning something and explaining it clearly to others helps deepen my own understanding, and viewers can point out any obvious mistakes. I've found this a great way to learn. This section has two parts: my talks on research frontiers, and videos from my self-study of scientific paper writing and causal inference (I never quite got my head around the latter and have since given up). I hope you find these videos helpful, and I welcome your feedback and corrections.</p>
+        </div>
+      </div>
+
+      <div id="talk-list" aria-live="polite">
+        <section class="talk-group" aria-labelledby="frontier-talks-heading">
+          <h3 id="frontier-talks-heading" class="talk-group-title">Research Frontiers <span lang="zh-CN">（前沿分享）</span></h3>
+          <div id="frontier-talk-list" class="talk-list"></div>
+        </section>
+        <hr class="talk-divider" />
+        <section class="talk-group" aria-labelledby="classic-talks-heading">
+          <h3 id="classic-talks-heading" class="talk-group-title">Classic Courses <span lang="zh-CN">（经典课程）</span></h3>
+          <div id="classic-talk-list" class="talk-list"></div>
+        </section>
+      </div>
     </section>
 
     <!-- Marathons -->

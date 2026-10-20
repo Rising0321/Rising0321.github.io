@@ -32,7 +32,7 @@
         thumbnail.appendChild(zoom);
         card.appendChild(thumbnail);
         var body = element('div', 'talk-body');
-        var heading = element('h3');
+        var heading = element('h4');
         var link = element('a', '', talk.title);
         link.href = talk.url;
         link.target = '_blank';
@@ -58,7 +58,8 @@
               '点赞和收藏暂未同步 / Views updated; likes and favorites show previously saved counts.'));
         }
         card.appendChild(body);
-        list.appendChild(card);
+        var group = talk.kind === 'season' || talk.kind === 'series' ? 'classic-talk-list' : 'frontier-talk-list';
+        document.getElementById(group).appendChild(card);
         var lightbox = element('div', 'lightbox-target');
         lightbox.id = 'lb-talk-' + i;
         var close = element('a', 'lightbox-close', 'close');

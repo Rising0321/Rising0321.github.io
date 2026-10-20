@@ -363,7 +363,7 @@ main {
 
 .paper-body h3,
 .project-body h3,
-.talk-body h3 {
+.talk-body h4 {
   font-family: var(--font-body);
   font-size: 1.02rem;
   font-weight: 600;
@@ -444,12 +444,12 @@ main {
   color: var(--ink-muted);
 }
 
-.talk-body h3 a {
+.talk-body h4 a {
   color: inherit;
   text-decoration: none;
 }
 
-.talk-body h3 a:hover {
+.talk-body h4 a:hover {
   color: var(--trajectory);
 }
 
@@ -479,6 +479,25 @@ main {
   color: var(--ink-muted);
   font-size: 0.85rem;
   line-height: 1.6;
+}
+
+.talk-intro { margin-bottom: 2rem; }
+.talk-group-title {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+.talk-group-title span {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+.talk-divider {
+  margin: 2.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--line);
 }
 
 .talk-links a {
