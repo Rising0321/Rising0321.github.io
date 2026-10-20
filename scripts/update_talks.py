@@ -8,6 +8,7 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+from render_talks import write_page
 
 
 class UpstreamError(Exception):
@@ -167,6 +168,7 @@ def main():
     temporary = path.with_suffix(".tmp")
     temporary.write_text(json.dumps(talks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     temporary.replace(path)
+    write_page(talks)
     rows.append(f"\nUpdated {updated}/{len(talks)} entries; {degraded} entries need attention.")
     summary = "\n".join(rows) + "\n"
     print(summary)
