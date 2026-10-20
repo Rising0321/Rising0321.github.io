@@ -4,56 +4,84 @@
     "title": "【学习小记】：一个小时从强化学习0基础到理解GRPO",
     "url": "https://www.bilibili.com/video/BV1s16UB7Eop/",
     "thumb": "images/talks/GRPO.png",
-    "views": 25125,
-    "stats_status": "stale"
+    "views": 25573,
+    "stats_status": "fresh",
+    "likes": 1163,
+    "favorites": 3699,
+    "views_updated_at": "2026-10-20T11:03:18+00:00",
+    "engagement_updated_at": "2026-10-20T11:03:18+00:00"
   },
   {
     "bvid": "BV12m2WBhE1L",
     "title": "浅谈当下深度生成模型：从VAE、GAN、Diffusion、Flow Matching到世界模型",
     "url": "https://www.bilibili.com/video/BV12m2WBhE1L/",
     "thumb": "images/talks/Diffusion.png",
-    "views": 12399,
-    "stats_status": "stale"
+    "views": 12513,
+    "stats_status": "fresh",
+    "likes": 454,
+    "favorites": 1365,
+    "views_updated_at": "2026-10-20T11:03:18+00:00",
+    "engagement_updated_at": "2026-10-20T11:03:18+00:00"
   },
   {
     "bvid": "BV1F44y1X7o6",
     "title": "Neural ODE, CDE... 神经微分方程大家族",
     "url": "https://www.bilibili.com/video/BV1F44y1X7o6/",
     "thumb": "images/talks/NeuralODE.png",
-    "views": 4659,
-    "stats_status": "stale"
+    "views": 4755,
+    "stats_status": "fresh",
+    "likes": 132,
+    "favorites": 302,
+    "views_updated_at": "2026-10-20T11:03:18+00:00",
+    "engagement_updated_at": "2026-10-20T11:03:18+00:00"
   },
   {
     "bvid": "BV14hpneXEXz",
     "title": "深入浅出讲一讲大模型的Scaling Law(缩放定律)",
     "url": "https://www.bilibili.com/video/BV14hpneXEXz/",
     "thumb": "images/talks/scaling-law.png",
-    "views": 8900,
-    "stats_status": "stale"
+    "views": 8913,
+    "stats_status": "fresh",
+    "likes": 235,
+    "favorites": 590,
+    "views_updated_at": "2026-10-20T11:03:18+00:00",
+    "engagement_updated_at": "2026-10-20T11:03:18+00:00"
   },
   {
     "bvid": "BV1HrLB6XE6Q",
     "title": "40分钟了解OPD的主要工作：为什么RL时代还需要On-Policy Distillation",
     "url": "https://www.bilibili.com/video/BV1HrLB6XE6Q/",
     "thumb": "images/talks/OPD.png",
-    "views": 14247,
-    "stats_status": "stale"
+    "views": 14441,
+    "stats_status": "fresh",
+    "likes": 623,
+    "favorites": 1503,
+    "views_updated_at": "2026-10-20T11:03:18+00:00",
+    "engagement_updated_at": "2026-10-20T11:03:18+00:00"
   },
   {
     "bvid": "BV1cdTL6iE8W",
     "title": "现代生成模型为什么都在换掉VAE Latent？从Latent Diffusion到RAE、JiT与Tuna-2 | NextTryTV",
     "url": "https://www.bilibili.com/video/BV1cdTL6iE8W/",
     "thumb": "images/talks/whyvae.png",
-    "views": 11861,
-    "stats_status": "stale"
+    "views": 12397,
+    "stats_status": "fresh",
+    "likes": 643,
+    "favorites": 1549,
+    "views_updated_at": "2026-10-20T11:03:18+00:00",
+    "engagement_updated_at": "2026-10-20T11:03:18+00:00"
   },
   {
     "bvid": "BV1wWEA6FEqY",
     "title": "从DMD到Self/Causal Forcing及其++版本的8篇论文：视频生成模型的蒸馏是规模化部署的必经之路吗？",
     "url": "https://www.bilibili.com/video/BV1wWEA6FEqY/",
     "thumb": "images/talks/DMD.png",
-    "views": 2780,
-    "stats_status": "stale"
+    "views": 2894,
+    "stats_status": "fresh",
+    "likes": 134,
+    "favorites": 238,
+    "views_updated_at": "2026-10-20T11:03:18+00:00",
+    "engagement_updated_at": "2026-10-20T11:03:18+00:00"
   },
   {
     "bvid": "BV1BS94BGEXh",
@@ -61,7 +89,11 @@
     "url": "https://www.bilibili.com/video/BV1BS94BGEXh/",
     "thumb": "images/talks/HY-World.png",
     "views": 2013,
-    "stats_status": "stale"
+    "stats_status": "fresh",
+    "likes": 67,
+    "favorites": 102,
+    "views_updated_at": "2026-10-20T11:03:18+00:00",
+    "engagement_updated_at": "2026-10-20T11:03:18+00:00"
   },
   {
     "kind": "season",
@@ -84,7 +116,10 @@
     "thumb": "images/talks/causal-inference.svg",
     "views": 9373,
     "video_count": 14,
-    "views_updated_at": "2026-10-20T11:02:21+00:00",
-    "stats_status": "partial"
+    "views_updated_at": "2026-10-20T11:03:18+00:00",
+    "stats_status": "fresh",
+    "likes": 158,
+    "favorites": 241,
+    "engagement_updated_at": "2026-10-20T11:03:18+00:00"
   }
 ]
