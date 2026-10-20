@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+  <rect width="640" height="400" rx="20" fill="#141e32"/>
+  <path d="M52 62h64M52 76h40" stroke="#e8c87a" stroke-width="5"/>
+  <text x="52" y="142" fill="#e8c87a" font-family="sans-serif" font-size="18" letter-spacing="3">SELECTED TALKS · COLLECTION</text>
+  <text x="52" y="218" fill="#f3f0e8" font-family="sans-serif" font-size="44" font-weight="bold">科技论文写作指南</text>
+  <text x="52" y="275" fill="#f3f0e8" font-family="sans-serif" font-size="27">刘雪峰版</text>
+  <path d="M52 330h536" stroke="#e8c87a" opacity=".4"/>
+  <text x="52" y="367" fill="#e8c87a" font-family="sans-serif" font-size="16">RESEARCH · WRITING · COMMUNICATION</text>
+</svg>

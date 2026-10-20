@@ -467,6 +467,13 @@ main {
   color: #c4613a;
 }
 
+.talk-note {
+  margin: 0.5rem 0 0;
+  color: var(--ink-muted);
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
 .talk-links a {
   font-family: var(--font-mono);
   font-size: 0.75rem;
